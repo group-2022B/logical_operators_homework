@@ -9,4 +9,4 @@ def main(n):
         bool: answer
     """
 
-    return
+    return n // 10 == n % 10
