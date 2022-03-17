@@ -1,3 +1,6 @@
+from operator import imod
+
+
 def main(n):
     """
     A number consisting of one and zero is given (the number starts at once). 
@@ -8,5 +11,7 @@ def main(n):
     Returns:
         bool: answer
     """
+    n = str(n)
+    return n.count('1') > n.count('0')
 
-    return
+print(main(10011))
